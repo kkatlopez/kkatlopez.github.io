@@ -1,0 +1,22 @@
+body {
+    background-color: #fffcfc;
+}
+
+.jumbotron {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e6f0fa;
+}
+
+.jumbotron h1 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.desc {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    box-shadow: 10px 10px #3f4245;
+}
