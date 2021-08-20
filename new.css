@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* .window-container {
+    padding: 20px;
+    box-sizing: border-box
+}
+.window {
+    background-color: pink;
+    height: 20%;
+    padding: 40px;
+} */
+
+.container {
+    padding: 0;
+}
+
+.border-black {
+    color: #000000;
+}
+
+.row {
+    margin: auto !important;
+}
+
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bg-gray {
+    background-color:#c4c4c4;
+}
+
+.bi-circle-red {
+    color:#ff605c;
+}
+
+.bi-circle-yellow {
+    color:#ffbd44;
+}
+
+.bi-circle-green {
+    color:#00ca4e;
+}
