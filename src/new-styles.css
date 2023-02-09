@@ -69,6 +69,11 @@ html {
     font-family: 'Lato', serif;
 }
 
+.projects > div {
+    padding: 0;
+    margin: 1rem 0;
+}
+
 .project, .project > img {
     height: 350px;
     width: 350px;

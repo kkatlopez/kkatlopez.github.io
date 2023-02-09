@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+.jumbotron {
+    background-image: url("/src/jumbotron.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
