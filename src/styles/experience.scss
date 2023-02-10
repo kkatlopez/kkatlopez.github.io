@@ -1,0 +1,29 @@
+@use '../App.scss' as v;
+
+.window.experience {
+    max-height: 64vh;
+    overflow-y: auto;
+    .vertical-timeline-element {
+        &:last-of-type {
+            display: none;
+        }
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+    }
+    
+    .vertical-timeline-element-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .exp p.exp-job {
+        font-style: italic;
+        font-weight: bold;
+        font-size: var(--bs-body-font-size);
+    }
+    
+    .vertical-timeline-element-subtitle {
+        font-size: 0.875rem;
+    }
+}

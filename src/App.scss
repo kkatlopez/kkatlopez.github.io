@@ -1,0 +1,51 @@
+$red: #FF605C;
+$orange: #FFBD44;
+$green: #00CA4E;
+$light-gray: #f0f0f0;
+$gray: #d4d4d4;
+$white: #fff;
+
+#root {
+    background-color: #f7faff;
+}
+
+.window {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid $gray;
+    background-color: $white;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    .action-container {
+        background-color: $light-gray;
+        height: 36px;
+        border-bottom: 1px solid $gray;
+        padding: 0 0.5rem;
+        margin-bottom: 0.75rem;
+        .action-btns {
+            padding: 0 0.5rem;
+            .circle {
+                align-self: center;
+                border-radius: 50px;
+                height: 12px;
+                width: 12px;
+                padding: 0;
+                margin: 0 0.15rem;
+                &.close {
+                    background-color: $red;
+                }
+                &.minimize {
+                    background-color: $orange;
+                }
+                &.open {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+    .img-container {
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #b8d7d9;
+    }
+}
