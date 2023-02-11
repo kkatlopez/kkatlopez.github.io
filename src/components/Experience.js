@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import Actions from './Actions';
 import ExperienceDetail from './ExperienceDetail';
-import { Container, Row, Col } from 'react-bootstrap';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { Container } from 'react-bootstrap';
+import { VerticalTimeline }  from 'react-vertical-timeline-component';
 import '../styles/experience.scss';
 import experience from './assets/experience.json';
 

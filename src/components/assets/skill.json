@@ -1,0 +1,62 @@
+[
+    {
+        "skill": "Bootstrap",
+        "image": "./images/bootstrap.png",
+        "alt": "Bootstrap logo"
+    },
+    {
+        "skill": "CSS3",
+        "image": "./images/css.png",
+        "alt": "CSS logo"
+    },
+    {
+        "skill": "HTML5",
+        "image": "./images/html.png",
+        "alt": "HTML logo"
+    },
+    {
+        "skill": "JavaScript",
+        "image": "./images/js.png",
+        "alt": "JavaScript logo"
+    },
+    {
+        "skill": "jQuery",
+        "image": "./images/jquery.png",
+        "alt": "jQuery logo"
+    },
+    {
+        "skill": "MongoDB",
+        "image": "./images/mongo.png",
+        "alt": "MongoDB logo"
+    },
+    {
+        "skill": "mySQL",
+        "image": "./images/sql.png",
+        "alt": "mySQL logo"
+    },
+    {
+        "skill": "Node.js",
+        "image": "./images/node.png",
+        "alt": "Node.js logo"
+    },
+    {
+        "skill": "PHP",
+        "image": "./images/php.png",
+        "alt": "PHP logo"
+    },
+    {
+        "skill": "Python",
+        "image": "./images/python.png",
+        "alt": "Python logo"
+    },
+    {
+        "skill": "React",
+        "image": "./images/react.png",
+        "alt": "React logo"
+    },
+    {
+        "skill": "Sass",
+        "image": "./images/sass.png",
+        "alt": "Saas logo"
+    }
+]

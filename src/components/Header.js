@@ -1,7 +1,6 @@
 import Actions from './Actions';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/header.scss';
-import me from './assets/me.jpg';
 
 function Header() {
     return (
@@ -10,7 +9,7 @@ function Header() {
             <Row className="d-flex align-items-center">
                 <Col md="5" lg="3">
                     <div className="img-container my-2">
-                        <img src={me} className="img-fluid image" alt="Kat Lopez"/>
+                        <img src="./images/me.jpg" className="img-fluid image" alt="Kat Lopez"/>
                     </div>
                 </Col>
                 <Col>
