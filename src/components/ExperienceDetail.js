@@ -2,16 +2,16 @@ import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import '../styles/experience.scss';
 
 function ExperienceDetail( {exp} ) {
-    var functions = exp?.functions.map((f) =>
-        <li className="mb-2">{f}</li>
+    var functions = exp?.functions.map((f, i) =>
+        <li className="mb-2" key={i}>{f}</li>
     );
     return (
         <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            className="vertical-timeline-element"
+            contentStyle={{ background: '#1982FC', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #1982FC' }}
             date={exp?.date}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#1982FC', color: '#fff' }}
         >
             <div className="exp d-xs-block d-md-flex justify-content-md-between">
                 <div>
@@ -20,7 +20,7 @@ function ExperienceDetail( {exp} ) {
                 </div>
                 <h4 className="vertical-timeline-element-subtitle mb-2">{exp?.location}</h4>
             </div>
-            <ul class="mb-0 d-none d-md-block exp-functions">{functions}</ul>
+            <ul className="mb-0 d-none d-md-block exp-functions">{functions}</ul>
         </VerticalTimelineElement>
     );
 }
