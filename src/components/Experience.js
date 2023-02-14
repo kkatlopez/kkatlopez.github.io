@@ -13,17 +13,7 @@ function Experience() {
         setShow(show => !show);
         setShowClass("invis");
     };
-    // const customTheme = {
-    //     borderDotColor: '#ffffff',
-    //     descriptionColor: '#262626',
-    //     dotColor: '#d0cdc4',
-    //     eventColor: '#965500',
-    //     lineColor: '#d0cdc4',
-    //     subtitleColor: '#7c7c7c',
-    //     titleColor: '#405b73',
-    //     yearColor: '#405b73',
-    // };
-      
+    
     return (
         <Container className={show ? `window experience` : `window experience ${showClass}`}>
             <div onClick={() => isVisible()}

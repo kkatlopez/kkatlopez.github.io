@@ -3,12 +3,70 @@
 .window.experience {
     max-height: 64vh;
     overflow-y: auto;
+    background-color: #e6eff2;
     .vertical-timeline-element {
         &:last-of-type {
             display: none;
         }
         &:nth-last-child(2) {
             margin-bottom: 0;
+        }
+        .vertical-timeline-element-icon {
+            display: flex;
+            img {
+                width: 34px;
+                height: auto;
+            }
+        }
+        &.ibm {
+            .vertical-timeline-element-content {
+                border-top: 3px solid v.$ibm-blue;
+                .tags > .badge {
+                    background-color: v.$ibm-blue !important;
+                    color: v.$white;
+                }
+            }
+            .vertical-timeline-element-icon {
+                background-color: v.$ibm-blue;
+            }
+            // &.current {
+            //     color: v.$white;
+            //     .vertical-timeline-element-content {
+            //         background-color: v.$ibm-blue;
+            //         border-top: 3px solid transparent;
+            //         .tags > .badge {
+            //             background-color: v.$white !important;
+            //             color: v.$ibm-blue;
+            //         }
+            //     }
+            //     .vertical-timeline-element-content-arrow {
+            //         border-right: 7px solid v.$ibm-blue;
+            //     }
+            // }
+        }
+        &.tcw {
+            .vertical-timeline-element-content {
+                border-top: 3px solid #002d9c;
+                .tags > .badge {
+                    background-color: #002d9c !important;
+                    color: v.$white;
+                }
+            }
+            .vertical-timeline-element-icon {
+                background-color: #002d9c;
+            }
+        }
+        &.rpi {
+            .vertical-timeline-element-content {
+                border-top: 3px solid #d6001c;
+                .tags > .badge {
+                    background-color: #d6001c !important;
+                    color: v.$white;
+                }
+            }
+            .vertical-timeline-element-icon {
+                background-color: #d6001c;
+            }
         }
     }
     
