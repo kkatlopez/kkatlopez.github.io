@@ -1,6 +1,7 @@
 [
     {
         "name": "Security Learning Academy Portal (SLAP)",
+        "shortName": "SLAP",
         "desc": "Internal course lifecycle tool for Security Learning Services (SLS) team",
         "img": "./images/slap.png",
         "descLong": "The Security Learning Academy Portal (SLAP) is an internal course lifecycle tool used by the Security Learning Services (SLS) team. Each course on the Security Learning Academy (SLA) is recorded on SLAP, storing its metadata like Vimeo video links, course authors, and lifecycle progress.",
@@ -10,11 +11,11 @@
             "Enhanced administration UI while also creating new features such as unlocking published records to modify fields and reassigning courses from one author to another",
             "Fixed general bugs as they arose"
         ],
-        "tags": [ "Full-stack Development", "UI/UX Design", "PHP", "jQuery", "SQL", "Mustache" ],
-        "imgList": []
+        "tags": [ "Full-stack Development", "UI/UX Design", "PHP", "jQuery", "SQL", "Mustache" ]
     },
     {
         "name": "Security Learning Academy (SLA)",
+        "shortName": "SLA",
         "desc": "Free technical training for IBM Security Products",
         "img": "./images/sla.png",
         "descLong": "The Security Learning Academy (SLA) is an online platform for free IBM Security products training built on Moodle, an open-source LMS software. Multiple course formats are available including videos, documentation, and interactive labs.",
@@ -47,8 +48,7 @@
             "Recorded and edited two virtual labs in Adobe Captivate for IBM Security Guardium",
             "Worked with subject matter experts and content developers to develop and publish labs"
         ],
-        "tags": [ "Adobe Captivate" ],
-        "imgList": []
+        "tags": [ "Adobe Captivate" ]
     },
     {
         "name": "Process + Style Guides",
@@ -60,9 +60,7 @@
             "Worked closely with SLS editors to ensure information was correct and consistent with the team's guidelines",
             "Configured layout of both guides with chapters and subchapters",
             "Created new chapters in each guide as needed from other internal courses that had pertinent information regarding style and course creation/progress"
-        ],
-        "tags": [],
-        "imgList": []
+        ]
     },
     {
         "name": "IBM Cloud Networking UI",
@@ -92,7 +90,6 @@
             "Designed the site to mimic MacOS windows",
             "Stored data (like these projects) in JSON files to ease the modification of some components in the future"
         ],
-        "tags": [ "React", "SaSS/SCSS", "UI/UX Design" ],
-        "imgList": []
+        "tags": [ "React", "SaSS/SCSS", "UI/UX Design" ]
     }
 ]

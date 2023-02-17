@@ -24,7 +24,7 @@ function TechnicalSkills() {
                 <Row>
                     <div className="d-flex flex-wrap">
                         { skills.map((skill, i) =>
-                            <Col xs="4" sm="3" md="3" xl="3" className="skill p-1 my-2" key={i}>
+                            <Col xs="3" sm="3" md="2" lg="3" xl="3" className="skill p-1 my-2" key={i}>
                                 <img src={skill.image} alt={skill.alt} className="img-fluid skill-img img-rounded" key={i} />
                                 <div className="skill-title-layer">
                                     <p className="skill-title">{skill.skill}</p>

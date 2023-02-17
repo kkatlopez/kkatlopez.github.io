@@ -17,7 +17,7 @@ function App() {
             <Row>
                 <Projects />
             </Row>
-            <Row>
+            <Row className="edu-skills">
                 <Col xs="12" lg="7" xl="8" className="ps-0">
                     <Education />
                 </Col>

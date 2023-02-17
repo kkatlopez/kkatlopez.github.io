@@ -12,6 +12,15 @@ $bg-color: rgb(184, 215, 217, 0.5);
 $text-color: #0e4b4f;
 $link-color: #25949c;
 
+// Media queries
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 .window {
     border-radius: 8px;
     overflow: hidden;
@@ -70,5 +79,17 @@ $link-color: #25949c;
     color: $link-color;
     &:hover {
         color: $text-color;
+    }
+}
+
+.edu-skills {
+    @media only screen and (max-width: map-get($grid-breakpoints, lg)) {
+        > :first-of-type {
+            padding-right: 0;
+            margin-bottom: 1.5rem;
+        }
+        > :nth-of-type(2) {
+            padding-left: 0;
+        }
     }
 }

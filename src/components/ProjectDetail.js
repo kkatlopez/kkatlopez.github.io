@@ -22,13 +22,15 @@ function ProjectDetail( {proj} ) {
                             style={{ position: "sticky", top: "0", bottom: "0", zIndex: "1000"
                         }}
                         >
-                            <Actions name={proj.name} />
+                            <Actions name={proj.shortName ? proj.shortName : proj.name} />
                         </div>
 
                         <div className="tags mb-3">
-                            { proj.tags.map((tag, i) =>
-                                <Badge pill className="me-2" key={i}>{tag}</Badge>
-                            )}
+                            { proj.tags ? 
+                                proj.tags.map((tag, i) =>
+                                    <Badge pill className="me-2" key={i}>{tag}</Badge>
+                                ) 
+                            : null }
                         </div>
                         <p className="mb-3">{proj.descLong}</p>
                         <p><strong>Contributions:</strong></p>
@@ -38,12 +40,14 @@ function ProjectDetail( {proj} ) {
                             )}
                         </ul>
                         <Row className="d-flex images pt-2">
-                            { proj.imgList.map((item, i) =>
-                                <Col xs="12" xl="6" className="mx-auto mb-3" key={i}>
-                                    <Image src={item.img} fluid thumbnail alt={item.imgDesc} />
-                                    <p className="text-center mt-1"><em>{item.imgDesc}</em></p>
-                                </Col>
-                            )}
+                            { proj.imgList ? 
+                                proj.imgList.map((item, i) =>
+                                    <Col xs="12" xl="6" className="mx-auto mb-3" key={i}>
+                                        <Image src={item.img} fluid thumbnail alt={item.imgDesc} />
+                                        <p className="text-center mt-1"><em>{item.imgDesc}</em></p>
+                                    </Col>
+                                )
+                            : null }
                         </Row>
                     </Container>
                 </Modal>
