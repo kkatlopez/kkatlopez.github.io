@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Security Learning Academy Portal (SLAP)",
+        "desc": "Internal course lifecycle tool for Security Learning Services (SLS) team",
+        "img": "./images/slap.png",
+        "descLong": "The Security Learning Academy Portal (SLAP) is an internal course lifecycle tool used by the Security Learning Services (SLS) team. Each course on the Security Learning Academy (SLA) is recorded on SLAP, storing its metadata like Vimeo video links, course authors, and lifecycle progress.",
+        "infoList": [
+            "Implemented new user interfaces site-wide with Mustache templates",
+            "Created new features such as adding related courses to link course relationships, showing a progress bar of a course's status from development to retirement, and adding multiple course authors to a single course",
+            "Enhanced administration UI while also creating new features such as unlocking published records to modify fields and reassigning courses from one author to another",
+            "Fixed general bugs as they arose"
+        ],
+        "tags": [ "Full-stack Development", "UI/UX Design", "PHP", "jQuery", "SQL", "Mustache" ],
+        "imgList": []
+    },
+    {
+        "name": "Security Learning Academy (SLA)",
+        "desc": "Free technical training for IBM Security Products",
+        "img": "./images/sla.png",
+        "descLong": "The Security Learning Academy (SLA) is an online platform for free IBM Security products training built on Moodle, an open-source LMS software. Multiple course formats are available including videos, documentation, and interactive labs.",
+        "infoList": [
+            "Redesigned and implemented new user interfaces site-wide with Mustache templates and SCSS based on Adobe XD and Figma prototypes",
+            "Ensured new user interface was IBM Carbon compliant",
+            "Examined the web accessibility of the site against Web Content Accessibility Guidelines (WCAG) to improve end-user experience and usability",
+            "Revamped user dashboards to display information such as registered courses, course roadmaps, assigned learning, and events",
+            "Enhanced user experience for event administration pages with a new design and created email templates that encapsulate IBM Security style",
+            "Collaborated with peers to refine custom portals for paying customers"
+        ],
+        "tags": [ "Full-stack Development", "UI/UX Design", "PHP", "jQuery", "SQL", "Mustache", "Adobe XD + Figma" ],
+        "imgList": [ 
+            {
+                "img": "./images/sla-cat.png",
+                "imgDesc": "Example of SLA category UI"
+            },
+            {
+                "img": "./images/sla-dashboard.png",
+                "imgDesc": "SLA user dashboard"
+            }
+        ]
+    },
+    {
+        "name": "Virtual Labs",
+        "desc": "Realistic simulations of IBM Security Products available to SLA users",
+        "img": "./images/labs.png",
+        "descLong": "Virtual labs are one type of course available on the Security Learning Academy. These courses simulate a real working environment of IBM Security products. Each course has a lab guide that include instructions on how to complete the lab.",
+        "infoList": [
+            "Recorded and edited two virtual labs in Adobe Captivate for IBM Security Guardium",
+            "Worked with subject matter experts and content developers to develop and publish labs"
+        ],
+        "tags": [ "Adobe Captivate" ],
+        "imgList": []
+    },
+    {
+        "name": "Process + Style Guides",
+        "desc": "Documentation to aid in the consistency of SLA courses",
+        "img": "./images/styleguide.jpg",
+        "descLong": "The Process and Style Guides are documentations used internally by the Security Learning Services (SLS) subject matter experts and ideation and content developers. The goal of these guides is to help with consistent and attractive content throughout the Security Learning Academy. The Style Guide covers information like different course formats, writing guidelines, and grammar standards. The Process Guide includes information related closer to creating, publishing, and retiring courses, updating existing courses, and recertifying courses.",
+        "infoList": [
+            "Reworked the previous version of the Style Guide into a new format and split its information into two separate guides",
+            "Worked closely with SLS editors to ensure information was correct and consistent with the team's guidelines",
+            "Configured layout of both guides with chapters and subchapters",
+            "Created new chapters in each guide as needed from other internal courses that had pertinent information regarding style and course creation/progress"
+        ],
+        "tags": [],
+        "imgList": []
+    },
+    {
+        "name": "IBM Cloud Networking UI",
+        "desc": "Client project for IBM Developer Jumpstart program",
+        "img": "./images/ibm-cloud.png",
+        "descLong": "As an Early Professional Hire (EPH) at IBM, I was invited to participate in the Developer Jumpstart program. All EPHs were put into teams and were assigned a problem to design and develop a solution for over the span of four months. My team's project was to create a user interface for IBM Cloud for Kubernetes that allows users to view the statuses of their clusters and networks with the goal of eliminating the use of the command line.",
+        "infoList": [
+            "Acted as the team lead and client liason to schedule and spearhead meetings and assign tasks among team members",
+            "Designed and developed the user interface in Figma and React",
+            "Presented the final solution to our client, IBM RedHat OpenShift Kubernetes Service (ROKS) team, and Developer Jumpstart cohort"
+        ],
+        "tags": [ "React", "UI/UX Design", "Design Thinking" ],
+        "imgList": [
+            {
+                "img": "./images/ibm-cloud.png",
+                "imgDesc": "IBM Cloud Networking UI"
+            }
+        ]
+    },
+    {
+        "name": "Personal Portfolio",
+        "desc": "Hub for my projects, work, and experience",
+        "img": "./images/portfolio.png",
+        "descLong": "My portfolio encompasses my projects, work, and experience. It's a great way to practice my React skills, something I've wanted to improve since graduating from RPI.",
+        "infoList": [
+            "Created multiple components for each aspect of the portfolio",
+            "Designed the site to mimic MacOS windows",
+            "Stored data (like these projects) in JSON files to ease the modification of some components in the future"
+        ],
+        "tags": [ "React", "SaSS/SCSS", "UI/UX Design" ],
+        "imgList": []
+    }
+]

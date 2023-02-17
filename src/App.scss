@@ -6,13 +6,19 @@ $light-gray: #f0f0f0;
 $gray: #d4d4d4;
 $white: #fff;
 
+// Custom Bootstrap component colors
+$box-shadow: rgb(151, 191, 194, 0.4);
+$bg-color: rgb(184, 215, 217, 0.5);
+$text-color: #0e4b4f;
+$link-color: #25949c;
+
 .window {
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid $gray;
     background-color: $white;
     padding-bottom: 0.75rem;
-    height: 100%;
+    // height: 100%;
     .action-container {
         background-color: $light-gray;
         height: 36px;
@@ -58,4 +64,11 @@ $white: #fff;
        margin-bottom: 0;
        border-bottom: 1px solid transparent;
    }
+}
+
+.btn.btn-link {
+    color: $link-color;
+    &:hover {
+        color: $text-color;
+    }
 }

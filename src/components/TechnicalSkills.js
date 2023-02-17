@@ -14,7 +14,7 @@ function TechnicalSkills() {
 
     return (
         <Container 
-            className={show ? `window` : `window ${showClass}`}
+            className={show ? `window h-100` : `window ${showClass}`}
             style={{ height: show ? "" : "36px"}}
         >
             <div onClick={() => isVisible()}>

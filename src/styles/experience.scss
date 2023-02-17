@@ -3,7 +3,7 @@
 .window.experience {
     max-height: 64vh;
     overflow-y: auto;
-    background-color: #e6eff2;
+    background-color: v.$bg-color;
     .vertical-timeline-element {
         &:last-of-type {
             display: none;
