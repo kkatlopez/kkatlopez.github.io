@@ -79,17 +79,5 @@
                 "imgDesc": "IBM Cloud Networking UI"
             }
         ]
-    },
-    {
-        "name": "Personal Portfolio",
-        "desc": "Hub for my projects, work, and experience",
-        "img": "./images/portfolio.png",
-        "descLong": "My portfolio encompasses my projects, work, and experience. It's a great way to practice my React skills, something I've wanted to improve since graduating from RPI.",
-        "infoList": [
-            "Created multiple components for each aspect of the portfolio",
-            "Designed the site to mimic MacOS windows",
-            "Stored data (like these projects) in JSON files to ease the modification of some components in the future"
-        ],
-        "tags": [ "React", "SaSS/SCSS", "UI/UX Design" ]
     }
 ]

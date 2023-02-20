@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Actions from './Actions';
-import ProjectDetail from './ProjectDetail';
+import ProProjectDetail from './ProProjectDetail';
+import PersonalProjectDetail from './PersonalProjectDetail';
 import { Container, Accordion, Row } from 'react-bootstrap';
 import proProjects from './assets/professional-projects.json';
+import personalProjects from './assets/personal-projects.json';
 
 function Projects() {
     const [ show, setShow ] = useState(true);
@@ -22,13 +24,13 @@ function Projects() {
             </div>
             { show ?
                 <div className="projects">
-                    <Accordion defaultActiveKey="0" flush>
+                    <Accordion flush alwaysOpen>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Professional</Accordion.Header>
                             <Accordion.Body>
                                 <Row>
                                     {proProjects.map((proj, i) => 
-                                        <ProjectDetail proj={proj} key={i}/>
+                                        <ProProjectDetail proj={proj} key={i}/>
                                     )}
                                 </Row>
                             </Accordion.Body>
@@ -36,7 +38,12 @@ function Projects() {
                         <Accordion.Item eventKey="1">
                             <Accordion.Header>Personal</Accordion.Header>
                             <Accordion.Body>
-                                <p>&#128679; Under construction!</p>
+                                <p className="mb-3">These are projects I've completed in my free time to brush up on my technical skills.</p>
+                                <Row>
+                                    {personalProjects.map((proj, i) =>
+                                        <PersonalProjectDetail proj={proj} key={i}/>
+                                    )}
+                                </Row>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>

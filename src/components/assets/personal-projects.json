@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Personal Portfolio",
+        "desc": "Hub for my projects, work, and experience",
+        "img": "./images/portfolio.png",
+        "descLong": "My portfolio encompasses my projects, work, and experience. It's a great way to practice my React skills, something I've wanted to improve since graduating from RPI.",
+        "infoList": [
+            "Created multiple components for each aspect of the portfolio",
+            "Designed the site to mimic MacOS windows",
+            "Stored data (like these projects) in JSON files to ease the modification of components in the future",
+            "Deployed using GitHub pages"
+        ],
+        "tags": [ "React", "SaSS/SCSS", "UI/UX Design" ],
+        "links": [
+            {
+                "live": "https://kkatlopez.github.io",
+                "repo": "https://github.com/kkatlopez/kkatlopez.github.io"
+            }
+        ]
+    },
+    {
+        "name": "Tip Calculator",
+        "desc": "Calculator to compute how to split a bill among a group of people",
+        "img": "./images/tip-calc.png",
+        "descLong": "This web application requires a user to input the total amount of the bill, number of people to split the bill, and the percent tip. Based on that, the logic outputs the total amount with tip, amount to be paid by each person, total tip, and tip amount per person.",
+        "infoList": [
+            "Built using HTML, CSS, Bootstrap, and jQuery",
+            "Each time an input is changed, the outputs are dynamically calculated",
+            "jQuery logic does not allow user to type in non-numeric values less than 0"
+        ],
+        "tags": [ "Frontend Mentor", "HTML", "CSS", "Bootstrap", "jQuery" ],
+        "links": [
+            {
+                "live": "https://frontend-mentor-kkatlopez.vercel.app/tip-calculator/index.html",
+                "repo": "https://github.com/kkatlopez/frontend-mentor/tree/main/tip-calculator"
+            }
+        ],
+        "imgList": [
+            {
+                "img": "./images/tip-calc.png",
+                "imgDesc": "Tip Calculator"
+            }
+        ]
+    },
+    {
+        "name": "Interactive Card Details",
+        "desc": "Credit card form with real-time updates in the GUI",
+        "img": "./images/cc.png",
+        "descLong": "This credit card form requires users to fill out their name, credit card number, expiration date, and security code (CVC). While input fields are edited, the images on the right with the front and back of the credit card are dynamically updated as well.",
+        "infoList": [
+            "Built using HTML, CSS, Bootstrap, and jQuery",
+            "Each time an input is changed, the credit card images on the left dynamically change",
+            "Utilizes jQuery Form Validator plugin to validate the credit card fields",
+            "Ensures fields are not empty upon submission (data is not stored anywhere!)",
+            "Resizes based on screen size"
+        ],
+        "tags": [ "Frontend Mentor", "HTML", "CSS", "Bootstrap", "jQuery" ],
+        "links": [
+            {
+                "live": "https://frontend-mentor-kkatlopez.vercel.app/interactive-card-details-form/index.html",
+                "repo": "https://github.com/kkatlopez/frontend-mentor/tree/main/interactive-card-details-form"
+            }
+        ],
+        "imgList": [
+            {
+                "img": "./images/cc.png",
+                "imgDesc": "Interactive credit card detail form"
+            }
+        ]
+    },
+    {
+        "name": "Shortly URL Landing Page",
+        "desc": "Landing page to create shortened links with the Shortly API",
+        "img": "./images/shortly.png",
+        "descLong": "This web page allows users to quickly shorten long URLs then copy and paste them. The logic checks if the user has already shortened that link. Data is also stored in the window's session, so users can go back to their list even after closing out the site.",
+        "infoList": [
+            "Built using React, Sass/SCSS, and Bootstrap",
+            "Validates the link field to check if it is a valid link or if it is empty",
+            "Copies link to clipboard and changes the state of the button upon doing so",
+            "Resizes based on screen size"
+        ],
+        "tags": [ "Frontend Mentor", "React", "Sass/SCSS", "React Bootstrap" ],
+        "links": [
+            {
+                "live": "https://frontend-mentor-shorten-url-api-landing.vercel.app",
+                "repo": "https://github.com/kkatlopez/frontend-mentor-shorten-url-api-landing"
+            }
+        ],
+        "imgList": [
+            {
+                "img": "./images/shortly.png",
+                "imgDesc": "Interactive credit card detail form"
+            }
+        ]
+    }
+]

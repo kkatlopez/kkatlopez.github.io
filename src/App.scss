@@ -75,10 +75,20 @@ $grid-breakpoints: (
    }
 }
 
-.btn.btn-link {
-    color: $link-color;
-    &:hover {
-        color: $text-color;
+.btn {
+    &.btn-link {
+        color: $link-color;
+        &:hover {
+            color: $text-color;
+        }
+    }
+    &.btn-primary {
+        background-color: $link-color;
+        border: 1px solid $link-color;
+        &:hover {
+            background: $text-color;
+            border: 1px solid $text-color;
+        }
     }
 }
 

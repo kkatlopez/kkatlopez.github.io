@@ -3,7 +3,7 @@ import Actions from './Actions';
 import { Container, Row, Col, Image, Button, Modal, Badge } from 'react-bootstrap';
 import '../styles/projects.scss';
 
-function ProjectDetail( {proj} ) {
+function PersonalProjectDetail( {proj} ) {
     const [ showModal, setShowModal ] = useState(false);
 
     const modalVisible = () => {
@@ -33,12 +33,13 @@ function ProjectDetail( {proj} ) {
                             : null }
                         </div>
                         <p className="mb-3">{proj.descLong}</p>
-                        <p><strong>Contributions:</strong></p>
+                        <p><strong>Development:</strong></p>
                         <ul>
                             { proj.infoList.map((item, i) => 
                                 <li key={i}>{item}</li>
                             )}
                         </ul>
+
                         <Row className="d-flex images pt-2">
                             { proj.imgList ? 
                                 proj.imgList.map((item, i) =>
@@ -49,6 +50,18 @@ function ProjectDetail( {proj} ) {
                                 )
                             : null }
                         </Row>
+                        <Row className="mb-2">
+                            { proj.links.map((link, i) => 
+                                <div className="d-flex justify-content-center">
+                                    <a href={link.live}>
+                                        <Button size="sm" className="mx-2" variant="primary">Live Site</Button>
+                                    </a>
+                                    <a href={link.repo}>
+                                        <Button size="sm" className="mx-2" variant="primary">Repository</Button>
+                                    </a>
+                                </div>
+                            )}
+                        </Row>
                     </Container>
                 </Modal>
             : null }
@@ -56,4 +69,4 @@ function ProjectDetail( {proj} ) {
     );
 }
 
-export default ProjectDetail;
+export default PersonalProjectDetail;
