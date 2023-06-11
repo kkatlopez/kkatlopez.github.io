@@ -17,6 +17,9 @@ function App() {
             <Row>
                 <Projects />
             </Row>
+            <Row>
+                <Experience />
+            </Row>
             <Row className="edu-skills">
                 <Col xs="12" lg="7" xl="8" className="ps-0">
                     <Education />
@@ -24,9 +27,6 @@ function App() {
                 <Col xs="12" lg="5" xl="4" className="pe-0">
                     <Skills />
                 </Col>
-            </Row>
-            <Row>
-                <Experience />
             </Row>
         </Container>
     );

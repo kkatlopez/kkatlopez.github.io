@@ -30,9 +30,9 @@
         "alt": "MongoDB logo"
     },
     {
-        "skill": "mySQL",
+        "skill": "MySQL",
         "image": "./images/sql.png",
-        "alt": "mySQL logo"
+        "alt": "MySQL logo"
     },
     {
         "skill": "Node.js",

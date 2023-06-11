@@ -20,7 +20,7 @@
         }
         &.ibm {
             .vertical-timeline-element-content {
-                border-top: 3px solid v.$ibm-blue;
+                border-top: 2px solid v.$ibm-blue;
                 .tags > .badge {
                     background-color: v.$ibm-blue !important;
                     color: v.$white;
@@ -76,8 +76,7 @@
     }
     
     .exp p.exp-job {
-        font-style: italic;
-        font-weight: bold;
+        font-weight: 600;
         font-size: var(--bs-body-font-size);
     }
     

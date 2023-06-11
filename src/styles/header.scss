@@ -2,4 +2,22 @@
 
 div p {
     margin-bottom: 0;
+    a {
+        color: v.$link-color;
+        transition: 0.2s;
+        &:hover {
+            color: v.$text-color;
+            transition: 0.2s;
+        }
+    }
+}
+
+.socials {
+    div.social {
+        @media only screen and (min-width: map-get(v.$grid-breakpoints, lg)) {
+            &:not(:last-child) {
+                border-right: 1px solid v.$gray;
+            }
+        }
+    }
 }

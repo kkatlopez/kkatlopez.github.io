@@ -17,17 +17,17 @@ function ExperienceDetail( {exp} ) {
             date={exp?.date}
             icon={<img src={exp?.image} className="img-fluid m-auto" alt={`${exp?.company} logo`}/> }
         >
-            <div className="mb-2 tags">
+            <div className="d-none d-md-block mb-2 tags">
                 {tags}
             </div>
             <div className="exp d-xs-block d-md-flex justify-content-md-between">
                 <div>
-                    <h3 className="vertical-timeline-element-title">{exp?.company}</h3>
+                    <h3 className="vertical-timeline-element-title mb-1">{exp?.company}</h3>
                     <p className="mt-0 mb-2 exp-job">{exp?.job}</p>
                 </div>
                 <h4 className="vertical-timeline-element-subtitle mb-2">{exp?.location}</h4>
             </div>
-            <ul className="mb-0 d-none d-md-block exp-functions">{functions}</ul>
+            <ul className="mb-0 exp-functions">{functions}</ul>
         </VerticalTimelineElement>
     );
 }
