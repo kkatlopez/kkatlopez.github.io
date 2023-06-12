@@ -28,10 +28,10 @@ function Header() {
                     </Col>
                     <Col>
                         <h1>&#128075; Hi! I'm Kat Lopez</h1>
-                        <p>Full-stack developer & UI/UX designer at IBM Security Learning Services</p>
+                        <p>Full-stack developer & UI/UX designer @ IBM</p>
                         <hr/>
-                        <p>&#128205;&nbsp; Cambridge, MA</p>
-                        <p>&#129293;&nbsp; Passion for frontend development, end-user experience, and web accessibility</p>
+                        <p>&#128205; Cambridge, MA</p>
+                        <p>&#129293; Passion for frontend development, end-user experience, and web accessibility</p>
                         <hr/>
                         <Row className="socials">
                             <Col xs={6} lg="auto" className="social">

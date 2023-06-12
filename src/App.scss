@@ -27,6 +27,9 @@ $grid-breakpoints: (
     border: 1px solid $gray;
     background-color: $white;
     padding-bottom: 0.75rem;
+    transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     // height: 100%;
     .action-container {
         background-color: $light-gray;
@@ -68,6 +71,9 @@ $grid-breakpoints: (
 .invis {
     &.window {
         padding-bottom: 0;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     }
     .action-container {
        margin-bottom: 0;
