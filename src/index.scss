@@ -1,0 +1,88 @@
+@use './_variables.scss' as v;
+
+:root {
+    margin: 0 auto;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// links
+a {
+    font-weight: 500;
+    color: v.$black;
+    text-decoration: inherit;
+    background-image: linear-gradient(45deg, v.$black, v.$black 33.33333%, v.$periwinkle 66.66666%, v.$teal);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: top left;
+    transition: all 0.2s ease;
+    &:hover {
+        background-position: top left 100%;
+    }
+}
+
+// buttons
+button {
+    border-radius: 4px;
+    color: v.$white;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    transition: background-color 0.1s ease;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        background: #6d6d6d;
+    }
+}
+
+// headers
+h1 {
+    font-size: 6rem;
+    line-height: 1.1;
+    @media (max-width: 1200px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 1000px) {
+        font-size: 3.5rem;
+    }
+    @media (max-width: 500px) {
+        font-size: 2.75rem;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    color: v.$black;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: v.$black;
+        background-color: v.$white;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: v.$black;
+        color: v.$white;
+    }
+}

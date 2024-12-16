@@ -1,0 +1,113 @@
+@use '../../_variables.scss' as v;
+
+.home {
+    min-height: calc(100vh - 48px - 2rem);
+    display: flex;
+    flex-direction: column;
+    section.intro {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 48px);
+        background-color: v.$bg;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+        background-position: bottom 1px center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(248, 250, 252), rgba(255, 255, 255, 0));
+            filter: blur(10px);
+            z-index: 1; /* Ensure overlay is above the grid */
+            pointer-events: none; /* Allow clicks to pass through */
+        }
+        @media (min-width: 1600px) {
+            height: 800px;
+            min-height: unset;
+        }
+        @media (max-width: 600px) {
+            min-height: unset;
+            padding: 1.5rem 0;
+        }
+        .blurred-bg {
+            position: absolute;
+            top: 0;
+            min-width: 100vw;
+            background: radial-gradient(circle at 70% 30%, rgb(134, 170, 255, 0.3), transparent 30%),
+                radial-gradient(circle at 30% 70%, rgb(115, 195, 199, 0.3), transparent 30%);
+            filter: blur(100px);
+            z-index: 0;
+            height: calc(100vh - 118px);
+            margin-top: 48px;
+            @media (max-width: 600px) {
+                min-height: 600px;
+            }
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            height: fit-content;
+            z-index: 1;
+            @media (max-width: 800px) {
+                gap: 1.5rem;
+                width: 100%;
+            }
+            @media (max-width: 600px) {
+                flex-direction: column;
+                align-items: start;
+            }
+            img.me {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 2%;
+                @media (max-width: 800px) {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            span.text {
+                width: 100%;
+                h1.header {
+                    letter-spacing: -2px;
+                    background: -webkit-linear-gradient(45deg, v.$teal, v.$periwinkle 75%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
+                    margin: 0;
+                }
+                h2 {
+                    font-weight: 600;
+                    margin-top: 0;
+                    span:first-child {
+                        border-bottom: 3px solid v.$teal;
+                    }
+                    span:last-child {
+                        border-bottom: 3px solid v.$periwinkle;
+                    }
+                }
+                h3 {
+                    color: v.$text-secondary;
+                    font-weight: 400;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+    section.about {
+        h2 {
+            font-size: 2rem;
+            background: -webkit-linear-gradient(45deg, v.$periwinkle, v.$teal 10%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+}
