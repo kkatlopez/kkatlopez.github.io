@@ -91,11 +91,6 @@ section.experience {
             align-items: center;
             width: fit-content;
             transition: 0.1s ease-in;
-            .icon {
-                width: 14px;
-                height: 14px;
-                transition: 0.1s ease-in;
-            }
             &:hover .icon {
                 color: v.$teal;
                 transform: translate(0.25rem, 0);
@@ -103,6 +98,11 @@ section.experience {
                 -moz-transform: translate(0.25rem, 0);
                 -o-transform: translate(0.25rem, 0);
                 -ms-transform: translate(0.25rem, 0);
+            }
+            .icon {
+                width: 14px;
+                height: 14px;
+                transition: 0.1s ease-in;
             }
         }
     }

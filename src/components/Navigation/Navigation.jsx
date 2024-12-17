@@ -20,7 +20,7 @@ export default function Navigation() {
         const sections = document.querySelectorAll('section');
         const options = {
             root: null,
-            threshold: 0.5,
+            threshold: 0.7,
         };
 
         const observer = new IntersectionObserver((entries) => {
