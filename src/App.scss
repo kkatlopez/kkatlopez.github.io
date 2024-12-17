@@ -5,20 +5,24 @@
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    padding-bottom: 3rem;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-div > section > div {
-    max-width: 1400px;
-    margin: 0 auto;
-    @media (max-width: 1400px) {
-        margin: 0 2rem;
-    }
-    @media (max-width: 600px) {
-        margin: 0 1.5rem;
+div {
+    > section {
+        scroll-margin-top: 56px;
+        > div {
+            max-width: 1400px;
+            margin: 0 auto;
+            @media (max-width: 1400px) {
+                margin: 0 2rem;
+            }
+            @media (max-width: 600px) {
+                margin: 0 1.5rem;
+            }
+        }
     }
 }

@@ -9,14 +9,15 @@
         max-height: 600px;
     }
     @media (max-width: 600px) {
-        min-height: 600px;
+        max-height: 600px;
+        min-height: 0;
     }
     section.intro {
         display: flex;
         gap: 2rem;
         justify-content: center;
         align-items: center;
-        min-height: calc(100vh - 48px);
+        min-height: 100vh;
         background-color: v.$bg;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
         background-position: bottom 1px center;
@@ -55,8 +56,7 @@
                 radial-gradient(circle at 30% 70%, rgb(115, 195, 199, 0.3), transparent 30%);
             filter: blur(100px);
             z-index: 0;
-            height: calc(100vh - 118px);
-            margin-top: 48px;
+            height: calc(100vh - 96px);
             @media (min-width: 1600px) {
                 min-height: 0;
                 max-height: 600px;

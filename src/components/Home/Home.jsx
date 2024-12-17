@@ -2,6 +2,9 @@ import me from '../../assets/me.jpeg';
 import './home.scss';
 
 export default function Home() {
+    const handleClick = () => {
+        window.location.href = 'mailto:kkatlopez@xyz.com';
+    };
     return (
         <div className='home-wrapper'>
             <section className='intro'>
@@ -14,7 +17,7 @@ export default function Home() {
                             <span>Building</span> and <span>designing</span> for the web.
                         </h2>
                         <h3>Software Engineer and UI/UX Designer @ IBM</h3>
-                        <button href='mailto:kkatlopez@xyz.com'>Contact me 📬</button>
+                        <button onClick={handleClick}>Contact me 📬</button>
                     </span>
                 </div>
             </section>

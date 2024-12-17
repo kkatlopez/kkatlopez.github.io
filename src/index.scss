@@ -9,6 +9,7 @@
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
+    background: v.$white;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -32,7 +33,7 @@ a {
         background-position: top left 100%;
     }
     &.inline {
-        font-weight: 600;
+        font-weight: 800;
         border-bottom: 2px solid v.$periwinkle;
         position: relative;
         color: v.$teal;
@@ -107,18 +108,18 @@ body {
     color: v.$black;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: v.$black;
-        background-color: v.$white;
-    }
-    a {
-        &:hover {
-            color: v.$teal;
-        }
-    }
-    button {
-        background-color: v.$black;
-        color: v.$white;
-    }
-}
+// @media (prefers-color-scheme: light) {
+//     :root {
+//         color: v.$black;
+//         background-color: v.$white;
+//     }
+//     a {
+//         &:hover {
+//             color: v.$teal;
+//         }
+//     }
+//     button {
+//         background-color: v.$black;
+//         color: v.$white;
+//     }
+// }
