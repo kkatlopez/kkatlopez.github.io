@@ -28,8 +28,8 @@ export default function Footer() {
                         React
                     </a>
                     , deployed with{' '}
-                    <a href='https://pages.github.com/' className='inline' target='_blank' rel='noopener'>
-                        GitHub Pages
+                    <a href='https://www.netlify.com/' className='inline' target='_blank' rel='noopener'>
+                        Netlify
                     </a>
                     .
                 </p>
