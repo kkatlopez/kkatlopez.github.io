@@ -9,9 +9,17 @@ function App() {
     return (
         <>
             <Home />
-            <Navigation />
-            <About />
-            <Experience />
+            <div className='main'>
+                <Navigation />
+                <span>
+                    <section className='about' id='about'>
+                        <About />
+                    </section>
+                    <section className='experience' id='experience'>
+                        <Experience />
+                    </section>
+                </span>
+            </div>
             <Footer />
         </>
     );

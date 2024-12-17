@@ -4,8 +4,8 @@
     min-height: calc(100vh - 48px - 2rem);
     display: flex;
     flex-direction: column;
-    @media (min-width: 1600px) {
-        min-height: 0;
+    @media (min-width: 1900px) {
+        min-height: 100vh;
         max-height: 600px;
     }
     @media (max-width: 600px) {
@@ -32,7 +32,7 @@
             filter: blur(10px);
             z-index: 1; /* Ensure overlay is above the grid */
             pointer-events: none; /* Allow clicks to pass through */
-            @media (min-width: 1600px) {
+            @media (min-width: 1900px) {
                 min-height: 0;
                 max-height: 600px;
             }
@@ -40,9 +40,8 @@
                 max-height: 600px;
             }
         }
-        @media (min-width: 1600px) {
-            height: 800px;
-            min-height: unset;
+        @media (min-width: 1900px) {
+            height: 100vh;
         }
         @media (max-width: 600px) {
             min-height: unset;
@@ -57,7 +56,7 @@
             filter: blur(100px);
             z-index: 0;
             height: calc(100vh - 96px);
-            @media (min-width: 1600px) {
+            @media (min-width: 1900px) {
                 min-height: 0;
                 max-height: 600px;
             }
@@ -106,10 +105,10 @@
                     color: v.$black;
                     -webkit-text-fill-color: unset;
                     span:first-child {
-                        border-bottom: 3px solid v.$teal;
+                        border-bottom: 4px solid v.$teal;
                     }
                     span:last-child {
-                        border-bottom: 3px solid v.$periwinkle;
+                        border-bottom: 4px solid v.$periwinkle;
                     }
                 }
                 h3 {

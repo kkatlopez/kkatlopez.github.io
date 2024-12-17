@@ -12,12 +12,12 @@ html {
 }
 
 div {
-    > section {
+    section {
         scroll-margin-top: 56px;
         > div {
             max-width: 1400px;
             margin: 0 auto;
-            @media (max-width: 1400px) {
+            @media (max-width: 1900px) {
                 margin: 0 2rem;
             }
             @media (max-width: 600px) {
@@ -25,4 +25,12 @@ div {
             }
         }
     }
+}
+
+.main {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
 }

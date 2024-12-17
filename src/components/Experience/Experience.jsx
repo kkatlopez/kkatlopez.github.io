@@ -36,7 +36,7 @@ const EXPERIENCE = [
 
 export default function Experience() {
     return (
-        <section className='experience' id='experience'>
+        <>
             <div className='exp-wrapper'>
                 <h2>Experience</h2>
                 <div className='exp-cards'>
@@ -54,6 +54,6 @@ export default function Experience() {
                     <Card />
                 </div>
             </div>
-        </section>
+        </>
     );
 }
