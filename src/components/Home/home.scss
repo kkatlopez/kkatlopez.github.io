@@ -1,9 +1,16 @@
 @use '../../_variables.scss' as v;
 
-.home {
+.home-wrapper {
     min-height: calc(100vh - 48px - 2rem);
     display: flex;
     flex-direction: column;
+    @media (min-width: 1600px) {
+        min-height: 0;
+        max-height: 600px;
+    }
+    @media (max-width: 600px) {
+        min-height: 600px;
+    }
     section.intro {
         display: flex;
         gap: 2rem;
@@ -24,6 +31,13 @@
             filter: blur(10px);
             z-index: 1; /* Ensure overlay is above the grid */
             pointer-events: none; /* Allow clicks to pass through */
+            @media (min-width: 1600px) {
+                min-height: 0;
+                max-height: 600px;
+            }
+            @media (max-width: 600px) {
+                max-height: 600px;
+            }
         }
         @media (min-width: 1600px) {
             height: 800px;
@@ -43,6 +57,10 @@
             z-index: 0;
             height: calc(100vh - 118px);
             margin-top: 48px;
+            @media (min-width: 1600px) {
+                min-height: 0;
+                max-height: 600px;
+            }
             @media (max-width: 600px) {
                 min-height: 600px;
             }
@@ -84,7 +102,9 @@
                 }
                 h2 {
                     font-weight: 600;
-                    margin-top: 0;
+                    margin: 0 0 0 0;
+                    color: v.$black;
+                    -webkit-text-fill-color: unset;
                     span:first-child {
                         border-bottom: 3px solid v.$teal;
                     }
@@ -95,19 +115,9 @@
                 h3 {
                     color: v.$text-secondary;
                     font-weight: 400;
-                    margin-bottom: 0.5rem;
+                    margin: 1rem 0 0.5rem 0;
                 }
             }
-        }
-    }
-    section.about {
-        h2 {
-            font-size: 2rem;
-            background: -webkit-linear-gradient(45deg, v.$periwinkle, v.$teal 10%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
         }
     }
 }

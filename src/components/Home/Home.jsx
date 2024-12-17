@@ -3,7 +3,7 @@ import './home.scss';
 
 export default function Home() {
     return (
-        <div className='home'>
+        <div className='home-wrapper'>
             <section className='intro'>
                 <div className='blurred-bg'></div>
                 <div className='container'>
@@ -13,14 +13,9 @@ export default function Home() {
                         <h2>
                             <span>Building</span> and <span>designing</span> for the web.
                         </h2>
-                        {/* <h3>Currently: Software Engineer and UI/UX Designer @ IBM</h3> */}
+                        <h3>Software Engineer and UI/UX Designer @ IBM</h3>
                         <button href='mailto:kkatlopez@xyz.com'>Contact me 📬</button>
                     </span>
-                </div>
-            </section>
-            <section className='about' id='about'>
-                <div>
-                    <h2>About me</h2>
                 </div>
             </section>
         </div>

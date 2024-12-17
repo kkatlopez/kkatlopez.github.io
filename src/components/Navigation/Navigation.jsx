@@ -1,4 +1,5 @@
 import { BrowserRouter, NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './navigation.scss';
 
 export default function Navigation() {
@@ -10,13 +11,13 @@ export default function Navigation() {
                         <NavLink to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to='#about'>About</NavLink>
+                        <HashLink to='#about'>About</HashLink>
                     </li>
                     <li>
-                        <NavLink to='/'>Experience</NavLink>
+                        <HashLink to='#experience'>Experience</HashLink>
                     </li>
                     <li>
-                        <a href='mailto:kkatlopez@xyz.com'>Contact</a>
+                        <HashLink to='#contact'>Contact</HashLink>
                     </li>
                 </BrowserRouter>
             </ul>

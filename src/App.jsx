@@ -1,21 +1,16 @@
-import { createBrowserRouter } from 'react-router';
-import './App.scss';
-import Home from './components/Home/Home';
 import Navigation from './components/Navigation/Navigation';
-import { RouterProvider } from 'react-router-dom';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Experience from './components/Experience/Experience';
+import './App.scss';
 
 function App() {
-    const router = createBrowserRouter([
-        {
-            path: '/',
-            element: <Home />,
-        },
-    ]);
-
     return (
         <>
             <Navigation />
-            <RouterProvider router={router} />
+            <Home />
+            <About />
+            <Experience />
         </>
     );
 }
