@@ -1,5 +1,17 @@
 @use '../../_variables.scss' as v;
 
+@media (prefers-color-scheme: light) {
+    a.active:not(:hover) {
+        background-image: linear-gradient(#676767, #676767);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    a.active:not(:hover) {
+        background-image: linear-gradient(v.$white, v.$white);
+    }
+}
+
 nav.navigation {
     position: sticky;
     top: 0;
@@ -24,7 +36,6 @@ nav.navigation {
                 font-weight: 300;
                 &.active:not(:hover) {
                     font-weight: 800;
-                    background-image: linear-gradient(#676767, #676767);
                     border-bottom: 4px solid v.$periwinkle;
                 }
                 &.active:hover {

@@ -34,3 +34,9 @@ div {
     max-width: 1400px;
     margin: 0 auto;
 }
+
+@media (prefers-color-scheme: light) {
+    .main {
+        background: v.$white;
+    }
+}

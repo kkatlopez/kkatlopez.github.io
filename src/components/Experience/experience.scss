@@ -1,17 +1,37 @@
 @use '../../_variables.scss' as v;
 
+@media (prefers-color-scheme: dark) {
+    section.experience {
+        .exp-card {
+            border: 1px solid #424242;
+            background: v.$black;
+            color: v.$white;
+            &:hover {
+                background: linear-gradient(145deg, v.$black, v.$black);
+                box-shadow:
+                    5px 5px 10px #151515,
+                    -5px -5px 10px v.$black;
+            }
+            .date {
+                color: #bebebe;
+            }
+            .info .tags .tag {
+                background-color: rgba(44, 117, 120, 0.5);
+                color: #c2fcff;
+            }
+        }
+    }
+}
+
 section.experience {
     .exp-card {
         margin-bottom: 2rem;
         padding: 1rem;
         border-radius: 8px;
-        border: 1px solid #efefef;
         display: flex;
         gap: 2rem;
-        color: v.$black;
         background-clip: unset;
         -webkit-text-fill-color: unset;
-        background: v.$white;
         transition: 0.1s ease-in;
         box-shadow: none;
         @media (max-width: 800px) {
@@ -19,10 +39,6 @@ section.experience {
             gap: 0.5rem;
         }
         &:hover {
-            background: linear-gradient(145deg, #ffffff, #ffffff);
-            box-shadow:
-                5px 5px 10px #f2f2f2,
-                -5px -5px 10px #ffffff;
             h3 {
                 color: v.$teal;
             }
@@ -42,7 +58,6 @@ section.experience {
             letter-spacing: 0.5px;
             min-width: 130px;
             width: 130px;
-            color: v.$text-secondary;
         }
         .info {
             .info-text {
@@ -75,8 +90,6 @@ section.experience {
                 flex-wrap: wrap;
                 .tag {
                     font-size: 12px;
-                    background-color: rgb(218, 241, 246, 50%);
-                    color: #4ba2a7;
                     padding: 0.15rem 0.4rem;
                     border-radius: 100px;
                 }
@@ -103,6 +116,29 @@ section.experience {
                 width: 14px;
                 height: 14px;
                 transition: 0.1s ease-in;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    section.experience {
+        background: v.$white;
+        .exp-card {
+            border: 1px solid #efefef;
+            background: v.$white;
+            &:hover {
+                background: linear-gradient(145deg, #ffffff, #ffffff);
+                box-shadow:
+                    5px 5px 10px #f2f2f2,
+                    -5px -5px 10px #ffffff;
+            }
+            .date {
+                color: v.$text-secondary;
+            }
+            .info .tags .tag {
+                background-color: rgb(218, 241, 246, 50%);
+                color: #4ba2a7;
             }
         }
     }
