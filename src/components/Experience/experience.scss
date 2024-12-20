@@ -51,6 +51,11 @@ section.experience {
                 -ms-transform: translate(0.25rem, 0);
             }
         }
+        .info .icon {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
         .date {
             font-size: 14px;
             font-weight: 400;
