@@ -1,8 +1,15 @@
-# React + Vite
+# kkatlopez.xyz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio available at [kkatlopez.xyz](https://kkatlopez.xyz).
 
-Currently, two official plugins are available:
+## How it's built
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vite.dev) in [React](https://react.dev/)
+- Deployed with [Netlify](https://www.netlify.com)
+
+### To run
+
+1. Clone repository
+2. Run `npm install`
+3. Run `npm run dev`
+4. Go to `http://localhost:5173/` in the browser of your choice

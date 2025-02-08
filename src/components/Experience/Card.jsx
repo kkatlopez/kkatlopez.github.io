@@ -24,7 +24,7 @@ export default function Card(props) {
     ) : (
         <>
             <a className='exp-card'>
-                <span className='date'>2021 – 2023</span>
+                <span className='date'>2021 – 2022</span>
                 <div className='info'>
                     <h3>Rensselaer Polytechnic Institute</h3>
                     <h4>Master of Science in Information Technology</h4>
