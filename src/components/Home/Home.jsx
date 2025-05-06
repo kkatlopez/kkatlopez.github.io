@@ -8,7 +8,7 @@ export default function Home() {
     const [show, setShow] = useState(window.innerWidth > 1900 || window.innerWidth < 600);
 
     const handleClick = () => {
-        window.location.href = 'mailto:kkatlopez@xyz.com';
+        window.location.href = 'mailto:kkatlopez18@gmail.com';
     };
 
     useEffect(() => {
