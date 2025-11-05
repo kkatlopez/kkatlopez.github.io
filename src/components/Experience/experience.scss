@@ -51,6 +51,9 @@ section.experience {
                 -ms-transform: translate(0.25rem, 0);
             }
         }
+        &.education:hover {
+            cursor: default;
+        }
         .info .icon {
             @media (max-width: 1000px) {
                 display: none;

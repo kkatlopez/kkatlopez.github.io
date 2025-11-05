@@ -23,7 +23,7 @@ export default function Card(props) {
         </a>
     ) : (
         <>
-            <a className='exp-card'>
+            <a className='exp-card education'>
                 <span className='date'>2021 – 2022</span>
                 <div className='info'>
                     <h3>Rensselaer Polytechnic Institute</h3>

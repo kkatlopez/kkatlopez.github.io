@@ -9,15 +9,15 @@ export default function About() {
                 applications and crafting accessible interfaces, my goal is to intuitive experiences.
             </p>
             <p>
-                Currently, I work in <strong>Global Sales Enablement</strong> at IBM, focusing on enhancing user
-                experiences. My main focus is on{' '}
+                Currently, I work in <strong>Global Sales</strong> at IBM, focusing on enhancing user experiences. My
+                main focus is on{' '}
                 <a href='https://www.ibm.com/training/' className='inline' target='_blank' rel='noopener'>
                     IBM Training
                 </a>
                 , which provides technical and hands-on training for a variety of IBM products.
             </p>
             <p>
-                In my free time, I&apos;m most likely playing video games, cross-stitching, or watching{' '}
+                In my free time, I&apos;m most likely playing video games, cross-stitching, crocheting, or watching{' '}
                 <a href='https://www.x.com/OWCEsports' className='inline' target='_blank' rel='noopener'>
                     esports
                 </a>
