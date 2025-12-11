@@ -6,13 +6,13 @@ import KatLopezResume from '../../assets/KatrinaLopezResume.pdf';
 
 const EXPERIENCE = [
     {
-        date: '2023 – Present',
+        date: '2023 – 2025',
         role: 'IBM • Software Engineer & UI/UX Designer',
         team: 'Global Sales',
         url: 'https://www.ibm.com/training/',
         shortInfo:
             'Build and style various web pages to serve IBM product training to clients. Work closely with developers and stakeholders to meet client needs and add functionality for internal teams.',
-        tags: ['ReactJS', 'Node.js', 'Javascript', 'IBM Db2', 'Sass'],
+        tags: ['ReactJS', 'Node.js', 'Javascript', 'IBM Db2', 'HTML & SCSS'],
     },
     {
         date: '2021 – 2023',
