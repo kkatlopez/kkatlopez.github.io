@@ -41,7 +41,7 @@ export default function Home() {
                             <h2>
                                 <span>Building</span> and <span>designing</span> for the web.
                             </h2>
-                            <h3>Software Engineer and UI/UX Designer @ IBM</h3>
+                            <h3>Software Engineer and UI/UX Designer</h3>
                             <button onClick={handleClick}>Contact me 📬</button>
                         </span>
                     </span>
