@@ -6,7 +6,16 @@ import KatLopezResume from '../../assets/KatrinaLopezResume.pdf';
 
 const EXPERIENCE = [
     {
-        date: '2023 – 2025',
+        date: 'March 2026 – Present',
+        role: 'Revvity Signals • Senior Frontend Engineer',
+        team: 'R&D – Biologics',
+        url: 'https://www.ibm.com/training/',
+        // shortInfo:
+        //     'Build and style various web pages to serve IBM product training to clients. Work closely with developers and stakeholders to meet client needs and add functionality for internal teams.',
+        tags: ['ReactJS', 'Javascript', 'HTML & SCSS'],
+    },
+    {
+        date: 'June 2023 – December 2025',
         role: 'IBM • Software Engineer & UI/UX Designer',
         team: 'Global Sales',
         url: 'https://www.ibm.com/training/',
@@ -15,7 +24,7 @@ const EXPERIENCE = [
         tags: ['ReactJS', 'Node.js', 'Javascript', 'IBM Db2', 'HTML & SCSS'],
     },
     {
-        date: '2021 – 2023',
+        date: 'May 2021 – June 2023',
         role: 'IBM • Software Engineer & UI/UX Designer',
         team: 'IBM Security: Security Learning Services',
         url: 'https://www.ibm.com/',
